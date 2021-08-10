@@ -11,7 +11,7 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body>
+<body id="body">
 
 <main id="main-doc">
 
@@ -340,28 +340,30 @@
 
 
 </main>
+
+<label for="toggle" id="burger-menu">&#9776;</label>
+<input type="checkbox" id="toggle" onclick="toggleNavBar()"/>
 <nav id="navbar">
+
     <h1 id="title"><span id="quantum-name">Quantum </span><br>Blog Documentation</h1>
 
-    <ul class="links-wrapper">
+    <div class="links-wrapper">
 
-        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-        <li>
-            <a class="nav-link" href="#website-information">Website information</a>
-        </li>
-        <li>
-            <a class="nav-link" href="#purpose">Purpose</a>
-        </li>
-        <li><a class="nav-link" href="#website-features">Website features</a></li>
-        <li><a class="nav-link" href="#scrum-steps">Scrum steps using Jira</a></li>
-        <li><a class="nav-link" href="#sprint-reports">Sprint reports</a></li>
-        <li><a class="nav-link" href="#features-per-developers">Features per developers</a></li>
-        <li>
-            <a class="nav-link" href="#scrum-team">Scrum Team</a>
-        </li>
-        <li><a class="nav-link" href="#conclusions">Conclusions</a></li>
+        <div class="nav-link"><a href="#Introduction">Introduction</a></div>
+        <div class="nav-link">
+            <a href="#website-information">Website information</a>
+        </div>
+        <div class="nav-link">
+            <a href="#purpose">Purpose</a>
+        </div>
+        <div class="nav-link"><a href="#website-features">Website features</a></div>
+        <div class="nav-link"><a href="#scrum-steps">Scrum steps using Jira</a></div>
+        <div class="nav-link"><a href="#sprint-reports">Sprint reports</a></div>
+        <div class="nav-link"><a href="#features-per-developers">Features per developers</a></div>
+        <div class="nav-link"><a href="#scrum-team">Scrum Team</a></div>
+        <div class="nav-link"><a href="#conclusions">Conclusions</a></div>
+    </div>
 
-    </ul>
 </nav>
 
 <footer>
@@ -369,6 +371,8 @@
         &copy; 2021-Quantum-tech | All rights reserved.
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
+
 
 </html>
